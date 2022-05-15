@@ -1,0 +1,205 @@
+* {
+    font-size: 10px;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+i {
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 22px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 10;
+}
+[show = false] {
+    display: none;
+    transition: 1s;
+}
+[show = true] {
+    transition: 1s;
+    display: flex;
+}
+#menu{
+    background-color: #ccc;
+    position: absolute;
+    height: 20%;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+#tools_container {
+    height: 100%;
+    background: purple;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#tools {
+    background-color: #333;
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bucket {
+    margin: .5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(./assets/img/bucket2.png) center center/cover no-repeat;
+    border: #ccc 1px dashed;
+    font-size: 2rem;
+    color: rgb(255, 255, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.shovel {
+    margin: .5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(./assets/img/shovel.png) center center/cover no-repeat;
+    border: #ccc 1px dashed;
+    font-size: 2rem;
+    color: rgb(255, 255, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+.pickaxe {
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(./assets/img/pickaxe.png) center center/cover no-repeat;
+    border: 0.1rem #ccc dashed;
+    font-size: 2rem;
+    color: rgb(255, 255, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+.axe {
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(./assets/img/axe.png) center center/cover no-repeat;
+    border: 0.1rem #ccc dashed;
+    font-size: 2rem;
+    color: rgb(255, 255, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#bank_container {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+#dirt {
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(./assets/img/dirt.jpg) center center/cover no-repeat;
+    font-size: 2rem;
+    color: rgb(255, 255, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+#grass {
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(./assets/img/grass.jpg) center center/cover no-repeat;
+    font-size: 2rem;
+    color: rgb(255, 255, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+#trunk {
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(./assets/img/trunk.jpg) center center/cover no-repeat;
+    font-size: 2rem;
+    color: rgb(255, 255, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+#tree {
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(./assets/img/tree.jpg) center center/cover no-repeat;
+    font-size: 2rem;
+    color: rgb(255, 255, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+#rock {
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(./assets/img/rock.jpg) center center/cover no-repeat;
+    font-size: 2rem;
+    color: rgb(255, 255, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+#water {
+    margin: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    background: url(./assets/img/water.jpg) center center/cover no-repeat;
+    font-size: 2rem;
+    color: rgb(255, 255, 118);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#grid {
+    background-color: #ccc;
+    width: 100%;
+    height: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(25, 1fr);
+}
+/* .cube {
+    border: 1px solid red;
+} */
+[type = 'dirt'] {
+    background: url(./assets/img/dirt.jpg) center center/cover no-repeat;
+}
+[type = 'grass'] {
+    background: url(./assets/img/grass.jpg) center center/cover no-repeat;
+}
+[type = 'trunk'] {
+    background: url(./assets/img/trunk.jpg) center center/cover no-repeat;
+}
+[type = 'tree'] {
+    background: url(./assets/img/tree.jpg) center center/cover no-repeat;
+}
+[type = 'rock'] {
+    background: url(./assets/img/rock.jpg) center center/cover no-repeat;
+}
+[type = 'water'] {
+    background: url(./assets/img/water.jpg) center center/cover no-repeat;
+}
+[type = 'sky'] {
+    background: rgb(145, 145, 255);
+}
+div [selectedTool = 'true'] {
+    padding: 0.4rem;
+    border: 0.2rem red solid ;
+}
+div [selectedItem = 'true'] {
+    padding: 0.4rem;
+    border: 0.2rem red solid ;
+}

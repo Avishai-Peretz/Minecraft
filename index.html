@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d981223242.js" crossorigin="anonymous"></script>
+    <title>Minecraft</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div id="grid"></div>
+        <div id="hamburgerMenu">
+            <i class="hamburger fa-solid fa-bars fa-xl"></i>
+        </div>
+        <div id="menu" show='false' >
+            <div id="tools_container">
+                <div id="tools">
+                    <div id="axe" class="tool axe"></div>
+                    <div id="pickaxe" class="tool pickaxe"></div>
+                    <div id="shovel" class="tool shovel"></div>
+                    <!-- <div id="cutter" class="cutter"></div> -->
+                    <div id="bucket" class="tool bucket"></div>
+                </div>
+                <div id="bank_container">
+                    <div id="dirt"></div>
+                    <div id="grass"></div>
+                    <div id="trunk"></div>
+                    <div id="tree"></div>
+                    <div id="rock"></div>               
+                    <div id="water"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./general.js" type="module" ></script>
+</body>
+    <style>
+        @media(max-width: 700px) {
+            * {
+                font-size: 5px;
+            };
+        };
+    </style>
+</html>

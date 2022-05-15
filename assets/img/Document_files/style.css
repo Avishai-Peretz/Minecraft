@@ -1,0 +1,47 @@
+main {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+#tools {
+    display: none;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 20%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#grid {
+    background-color: #ccc;
+    width: 100%;
+    height: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(25, 1fr);
+    grid-template-columns: repeat(25, 1fr);
+}
+/* .cube {
+    border: 1px solid red;
+} */
+[type = 'dirt'] {
+    background: url(./assets/img/dirt.jpg) center center/cover no-repeat;
+}
+[type = 'grass'] {
+    background: url(./assets/img/grass.jpg) center center/cover no-repeat;
+}
+[type = 'trunk'] {
+    background: url(./assets/img/trunk.jpg) center center/cover no-repeat;
+}
+[type = 'tree'] {
+    background: url(./assets/img/tree.jpg) center center/cover no-repeat;
+}
+[type = 'rock'] {
+    background: url(./assets/img/rock.jpg) center center/cover no-repeat;
+}
+[type = 'sky'] {
+    background: rgb(145, 145, 255);
+}

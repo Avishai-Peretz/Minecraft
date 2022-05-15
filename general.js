@@ -86,10 +86,6 @@ function drow (part, cube) {
  }   
 
 
-function blabla = () => {
-
-}
-
 
 function addToBank (part, cube) {
     cube.addEventListener('click', () => {
